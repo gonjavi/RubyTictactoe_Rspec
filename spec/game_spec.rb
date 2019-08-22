@@ -5,77 +5,77 @@ RSpec.describe Check_win do
     win = Check_win.new
     
 		it "it returns true if there is a victory" do 
-			board=["-","-","-","o","o","o","-","-","-"]
+			board = ["-","-","-","o","o","o","-","-","-"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["-","-","-","-","-","-","o","o","o"]
+			board = ["-","-","-","-","-","-","o","o","o"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["o","-","-","o","-","-","o","-","-"]
+			board = ["o","-","-","o","-","-","o","-","-"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["-","o","-","-","o","-","-","o","-"]
+			board = ["-","o","-","-","o","-","-","o","-"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["-","-","o","-","-","o","-","-","o"]
+			board = ["-","-","o","-","-","o","-","-","o"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["o","-","-","-","o","-","-","-","o"]
+			board = ["o","-","-","-","o","-","-","-","o"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["-","-","o","-","o","-","o","-","-"]
+			board = ["-","-","o","-","o","-","o","-","-"]
 			expect(win.check_win(board)).to eql(true)
 		end
 		
 		it "it returns true if there is a victory" do 
-			board=["-","-","-","x","x","x","-","-","-"]
+			board = ["-","-","-","x","x","x","-","-","-"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["-","-","-","-","-","-","x","x","x"]
+			board = ["-","-","-","-","-","-","x","x","x"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["x","-","-","x","-","-","x","-","-"]
+			board = ["x","-","-","x","-","-","x","-","-"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["-","x","-","-","x","-","-","x","-"]
+			board = ["-","x","-","-","x","-","-","x","-"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["-","-","x","-","-","x","-","-","x"]
+			board = ["-","-","x","-","-","x","-","-","x"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["x","-","-","-","x","-","-","-","x"]
+			board = ["x","-","-","-","x","-","-","-","x"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns true if there is a victory" do 
-			board=["-","-","x","-","x","-","x","-","-"]
+			board = ["-","-","x","-","x","-","x","-","-"]
 			expect(win.check_win(board)).to eql(true)
     end
     
 		it "it returns false if there is not victory" do 
-			board=["-","-","-","-","-","-","-","-","-"]
+			board = ["-","-","-","-","-","-","-","-","-"]
 			expect(win.check_win(board)).to eql(false)
 		end
 	end
@@ -86,12 +86,12 @@ describe "#check draw" do
   draw = Check_draw.new
   
 	it "it returns true if the game is a draw" do 
-		board=["x","x","o","o","o","x","x","x","o"]
+		board = ["x","x","o","o","o","x","x","x","o"]
 		expect(draw.check_draw(board)).to eql(true)
   end
   
 	it "it returns false if the game is not a draw" do 
-		board=["x","x","x","o","o","x","x","x","-"]
+		board = ["x","x","x","o","o","x","x","x","-"]
 		expect(draw.check_draw(board)).not_to eql(true)
 	end
 end
