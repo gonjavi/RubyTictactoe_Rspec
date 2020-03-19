@@ -1,6 +1,6 @@
-# Tictactoe_rspec
+# Tic Tac Toe Game Rspec Tests
 
-In this project we are testing with RSpec, the Tic Tac Toe Game developed in this repository: https://github.com/gonjavi/RubyTictactoe2
+In this project we are testing with RSpec, the Tic Tac Toe Game developed in the following repository: https://github.com/gonjavi/RubyTictactoe2
 
 ![screenshot](./tictactoe_rspec.png)
 
